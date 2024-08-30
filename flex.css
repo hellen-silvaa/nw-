@@ -1,0 +1,41 @@
+.balao {
+    background-color: rgb(208, 0, 255);
+    display: inline-block;
+    padding: 20px;
+    color: #FFF;
+    border-radius: 20px;
+}
+/*Para deixar a seta abaixo a esquerda*/
+.balao::after {
+    content: '';
+    position: absolute;
+    display: block; 
+    margin-top: 20px;
+    width: 100px;
+
+    margin-left: 50px;
+    border: solid 5px;
+    border-color: rgb(208, 0, 255) transparent transparent transparent;
+}
+.balao2::after {
+    content: '';
+    position: absolute;
+    display: block; 
+    margin-top: 20x;
+    height: 100px;
+    margin-left: 50px;
+    border: solid 5px;
+    /* border-color: rgb(208, 0, 255) transparent transparent transparent; */
+}
+
+/* 
+
+.balao::after{
+   content: '';
+   display: inline-block;
+   position: absolute;
+   margin-left: 20px;
+   top: 25px;
+   border: 20px solid;
+   border-color: transparent transparent transparent #FF0000;
+} */
